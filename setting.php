@@ -225,7 +225,7 @@ while($row=mysqli_fetch_array($query))
 </div>
 <label class="col-sm-2 col-form-label">Company Logo</label>
 <div class="col-sm-4">
- <image class="profile-img" src="uploadImage/Logo/<?php echo $logo; ?>" style="width: 50%"></image>
+ <image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 50%"></image>
 <input type="hidden" value="<?=$logo?>" name="old_image">
 <input type="file" class="form-control" name="logo">
 

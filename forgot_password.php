@@ -151,7 +151,7 @@ forEach(addButtonTrigger);
 
 <form method="POST" class="md-float-material form-material">
 <div class="text-center">
- <image class="profile-img" src="uploadImage/Logo/<?php echo $logo; ?>" style="width: 10%"></image>
+ <image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 20%"></image>
 </div>
 <div class="auth-box card">
 <div class="card-block">
@@ -174,9 +174,6 @@ forEach(addButtonTrigger);
 <div class="col-md-10">
 <p class="text-inverse text-left m-b-0">Thank you.</p>
 <p class="text-inverse text-left"><a href="index.php"><b class="f-w-600">Back to website</b></a></p>
-</div>
-<div class="col-md-2">
-<img src="files/assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
 </div>
 </div>
 </div>

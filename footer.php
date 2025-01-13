@@ -1,5 +1,5 @@
 
-<footer class="footer text-center" style="color: yellow">Clinic Management System.<p style="color: white">This is an academic project by Sameer Khalid.</p></footer>
+<footer class="footer text-center" style="color: yellow">Painful Kaw Kaw Specialist Hospital.<p style="color: white">&copy; 2025 PKK Hospital</p></footer>
 
 
 

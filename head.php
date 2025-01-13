@@ -30,7 +30,7 @@ while($row=mysqli_fetch_array($query))
 }
 ?>
 
-<link rel="icon" href="uploadImage/Logo/<?php echo $logo; ?>" type="image/x-icon">
+<link rel="icon" href="uploadImage/Logo/PKK.png" type="image/x-icon">
 <link href="files/assets/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 

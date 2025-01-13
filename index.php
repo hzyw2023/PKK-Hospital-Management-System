@@ -237,7 +237,7 @@ $row_manage = mysqli_fetch_array($result_manage);
 
 ?>
   <div class="row col-lg-12"><h3><b>Dashboard</b></h3></div>
-  <div class="row col-lg-12">Welcome to Polyclinic<br><br></div>
+  <div class="row col-lg-12">Welcome to PKK<br><br></div>
   <div class="card row col-lg-12">
     <div class="card-block">
       <!-- Row start -->

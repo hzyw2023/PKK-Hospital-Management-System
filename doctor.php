@@ -145,7 +145,7 @@ if(isset($_GET['editid']))
                     $qsqldepartment = mysqli_query($conn,$sqldepartment);
                     while($rsdepartment=mysqli_fetch_array($qsqldepartment))
                     {
-                       if($rsdepartment[departmentid] == $rsedit[departmentid])
+                       if($rsdepartment['departmentid'] == $rsedit['departmentid'])
                        {
                         echo "<option value='$rsdepartment[departmentid]' selected>$rsdepartment[departmentname]</option>";
                         }
@@ -162,7 +162,7 @@ if(isset($_GET['editid']))
 
         <label class="col-sm-2 col-form-label">Login Id</label>
         <div class="col-sm-4">
-            <input class="form-control" type="text" name="loginid" id="loginid" value="<?php if(isset($_GET['editid'])){ echo $rsedit['loginid'];} ?>"/>
+            <input class="form-control" type="text" name="loginid" id="loginid" value="<?php if(isset($_GET['editid'])){ echo $rsedit['loginid'];} ?>" required/>
             <span class="messages"></span>
         </div>
     </div>

@@ -157,7 +157,7 @@ while($row=mysqli_fetch_array($query))
 
 <div class="auth-box card" >
   <div class="text-center">
-<image class="profile-img" src="uploadImage/Logo/<?php echo $logo; ?>" style="width: 60%"></image>
+<image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 60%"></image>
 </div> 
 <div class="card-block" >
  
