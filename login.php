@@ -1,14 +1,5 @@
 <?php
-session_start();
-session_regenerate_id(true);
-
-// Security Configuration
-define('MAX_LOGIN_ATTEMPTS', 3);
-define('LOCKOUT_DURATION', 300); // 5 minutes lockout
-define('SALT', '2123293dsj2hu2nikhiljdsd');
-
-// Include database connection
-include('connect.php');
+require_once('bootstrap.php');
 
 // Security Logging Function
 function securityLogger($event_type, $username, $details) {

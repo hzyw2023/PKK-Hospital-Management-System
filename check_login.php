@@ -1,10 +1,8 @@
 <?php
-session_start();
-if(!(isset($_SESSION["email"]) && isset($_SESSION["password"]) && isset($_SESSION["user"]))){
-    // Store current URL for redirect after login
+require_once('bootstrap.php');
+
+if(!isset($_SESSION["email"]) || !isset($_SESSION["user"])) {
     $_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
-    header("location:login.php");
-    exit(); // Add exit after redirect
+    header("Location: login.php");
+    exit();
 }
-$myemail = $_SESSION['email'];
-?>
