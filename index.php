@@ -1,7 +1,6 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start(); ?>
 <?php require_once('check_login.php');?>
 <?php include('head.php');?>
 <?php include('header.php');?>
