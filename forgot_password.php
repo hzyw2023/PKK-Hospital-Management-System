@@ -170,11 +170,6 @@ forEach(addButtonTrigger);
 </div>
  </div>
 <p class="f-w-600 text-right">Back to <a href="login.php">Login.</a></p>
-<div class="row">
-<div class="col-md-10">
-<p class="text-inverse text-left m-b-0">Thank you.</p>
-<p class="text-inverse text-left"><a href="index.php"><b class="f-w-600">Back to website</b></a></p>
-</div>
 </div>
 </div>
 </div>

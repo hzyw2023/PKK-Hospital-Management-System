@@ -245,9 +245,6 @@ $captcha = generateCaptcha();
                                     <div class="forgot-phone text-right f-right">
                                         <a href="forgot_password.php" class="text-right f-w-600"> Forgot Password?</a>
                                     </div>
-                                    <div class="signup-link text-left f-left">
-                                        <a href="signup.php" class="text-left f-w-600"> Register</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="row m-t-30">
