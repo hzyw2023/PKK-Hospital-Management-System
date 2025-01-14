@@ -1,9 +1,9 @@
 <?php
 /* Local Database*/
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "pkkhospital.mysql.database.azure.com";
+$username = "mpaikdqxza";
+$password = "P@ssword1234";
 $dbname = "clinic_db";
 
 
