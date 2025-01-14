@@ -45,7 +45,7 @@ if(isset($_POST["btn_web"]))
           closedir($open);
         }
   //UPDATE `manage_website` SET `id`=[value-1],`business_name`=[value-2],`business_email`=[value-3],`business_web`=[value-4],`portal_addr`=[value-5],`addr`=[value-6],`curr_sym`=[value-7],`curr_position`=[value-8],`front_end_en`=[value-9],`date_format`=[value-10],`def_tax`=[value-11],`logo`=[value-12] WHERE 1
-   $q1="UPDATE `manage_website` SET `business_name`='$business_name',`business_email`='$business_email',`business_web`='$business_web',`portal_addr`='$portal_addr' ,`addr`= '$addr',`curr_sym`= '$curr_sym',`curr_position`='$curr_position',`front_end_en`='$front_end_en' , `date_format` = '$date_format', `def_tax` = '$def_tax', `logo` = '$file_name'";
+   $q1="UPDATE `manage_website` SET `business_name`='$business_name',`business_email`='$business_email',`business_web`='$business_web',`portal_addr`='$portal_addr' ,`addr`= '$addr',`curr_sym`= '$curr_sym',`curr_position`='$curr_position',`front_end_en`='$front_end_en' , `date_format` = '2025-01-01', `def_tax` = '$def_tax', `logo` = '$file_name'";
   if ($conn->query($q1) === TRUE) {
 
       $_SESSION['success']='Record Successfully Updated';
@@ -207,13 +207,6 @@ while($row=mysqli_fetch_array($query))
 <span class="messages"></span>
 </div>
 <label class="col-sm-2 col-form-label">Date Format</label>
-<div class="col-sm-4">
-<select type="text" class="form-control" id="date_format" name="date_format" placeholder="Add yes/no" required="">
-<option value="Y-m-d" <?php if($date_format=='Y-m-d'){echo "selected";}?>>Y-m-d</option>
-<option value="d-m-Y" <?php if($date_format=='d-m-Y'){echo "selected";}?>>d-m-Y</option>
-</select>
-<span class="messages"></span>
-</div>
 </div>
 
 <div class="form-group row">
