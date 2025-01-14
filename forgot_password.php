@@ -33,9 +33,9 @@
 if(isset($_POST['btn_forgot']))
 {
 $otp = substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz", 8)), 0, 8);
- $text_email=$_POST['email'];
+ $text_email=$_POST['loginid'];
 
-$sql = "SELECT * FROM admin where email ='".$text_email."' " ;
+$sql = "SELECT * FROM admin where loginid ='".$text_email."' " ;
 $ans = $conn->query($sql);
 $res=mysqli_fetch_array($ans);
   $realemail=$res['email'];

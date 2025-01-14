@@ -109,7 +109,7 @@ while($row=mysqli_fetch_array($query))
         if($_SESSION['user'] == 'admin'){
     ?>
 
-<img src="uploadImage/Profile/<?php echo $_SESSION['image'];?>" class="img-radius" alt="User-Profile-Image"/><?php }?>
+<img src="uploadImage/Profile/profile.jpg" class="img-radius" alt="User-Profile-Image"/><?php }?>
 <span><?php echo $_SESSION['fname']; ?></span>
 <i class="feather icon-chevron-down"></i>
 </div>

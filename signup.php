@@ -77,10 +77,10 @@ while($row=mysqli_fetch_array($query))
 
 <div class="auth-box card">
 <div class="card-block">
-<form id="main" method="post" action="pages/save_user_client.php" enctype="multipart/form-data">
+<form id="main" method="post" action="pages/save_user.php" enctype="multipart/form-data">
 <div class="row m-b-20">
 <div class="col-md-6 text-center" >
-<image class="profile-img" src="uploadImage/Logo/<?php echo $logo; ?>" style="width: 50%"></image>
+<image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 100%"></image>
 </div>
 <div class="col-md-6" style="margin-top: 40px;">
 <h3 class="text-center txt-primary">Sign up</h3>
