@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require_once('check_login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once('check_login.php');?>
