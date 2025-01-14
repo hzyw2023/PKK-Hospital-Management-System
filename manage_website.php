@@ -180,7 +180,7 @@ while($row=mysqli_fetch_array($query))
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Footer</label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" value="<?php// echo $footer;?>"  name="footer" class="form-control">
+                                                    <input type="text" value="<?php // echo $footer;?>"  name="footer" class="form-control">
                                                 </div>
                                             </div>
                                         </div> -->

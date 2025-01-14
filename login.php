@@ -130,38 +130,43 @@ if(isset($_POST['btn_login']))
         $_SESSION['fname'] = $row['fname'] ?? $row['doctorname'] ?? $row['patientname'];
         $_SESSION['user'] = $_POST['user'];
 
-        // Log successful login
-        securityLogger('login_success', $_POST['email'], "Successful login for {$_POST['user']}");
+       // Log successful login
+       securityLogger('login_success', $_POST['email'], "Successful login for {$_POST['user']}");
 
-        // Redirect to index
-        ?>
-        <div class="popup popup--icon -success js_success-popup popup--visible">
-            <div class="popup__background"></div>
-            <div class="popup__content">
-                <h3 class="popup__content__title">Success</h3>
-                <p>Login Successfully</p>
-                echo "<script>window.location.href = 'index.php';</script>";
-                exit();
-            </div>
-        </div>
-        <?php
-        exit();
-    }
+       // Redirect to index
+       ?>
+       <div class="popup popup--icon -success js_success-popup popup--visible">
+           <div class="popup__background"></div>
+           <div class="popup__content">
+               <h3 class="popup__content__title">Success</h3>
+               <p>Login Successfully</p>
+               </div>
+</div>
 
-    // If login fails
-    securityLogger('login_failed', $_POST['email'], "Invalid login attempt for {$_POST['user']}");
-    ?>
-    <div class="popup popup--icon -error js_error-popup popup--visible">
-        <div class="popup__background"></div>
-        <div class="popup__content">
-            <h3 class="popup__content__title">Error</h3>
-            <p>Invalid Email or Password</p>
-            <p>
-                <a href="login.php"><button class="button button--error" data-for="js_error-popup">Close</button></a>
-            </p>
-        </div>
-    </div>
-    <?php
+<script>
+    // Redirect to index.php after 1.5 seconds (1500 ms)
+    setTimeout(function() {
+        window.location.href = 'index.php';
+    }, 1500);
+</script>
+<?php
+exit();  // Stop execution after the popup
+}
+
+   // If login fails
+   securityLogger('login_failed', $_POST['email'], "Invalid login attempt for {$_POST['user']}");
+   ?>
+   <div class="popup popup--icon -error js_error-popup popup--visible">
+       <div class="popup__background"></div>
+       <div class="popup__content">
+           <h3 class="popup__content__title">Error</h3>
+           <p>Invalid Email or Password</p>
+           <p>
+               <a href="login.php"><button class="button button--error" data-for="js_error-popup">Close</button></a>
+           </p>
+       </div>
+   </div>
+   <?php
 }
 
 // Generate Captcha
@@ -193,7 +198,7 @@ $captcha = generateCaptcha();
             <div class="col-sm-12">
                 <div class="auth-box card">
                     <div class="text-center">
-                        <image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 70%"></image>
+                        <image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 60%"></image>
                     </div> 
                     <div class="card-block">
                         <div class="row m-b-20">
@@ -235,6 +240,9 @@ $captcha = generateCaptcha();
                                 <div class="col-12">
                                     <div class="forgot-phone text-right f-right">
                                         <a href="forgot_password.php" class="text-right f-w-600"> Forgot Password?</a>
+                                    </div>
+                                    <div class="signup-link text-left f-left">
+                                        <a href="signup.php" class="text-left f-w-600"> Register</a>
                                     </div>
                                 </div>
                             </div>

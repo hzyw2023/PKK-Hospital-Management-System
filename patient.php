@@ -152,7 +152,7 @@ if(isset($_GET['editid']))
     <div class="form-group row">
         <label class="col-sm-2 col-form-label">Login ID</label>
         <div class="col-sm-4">
-            <input class="form-control" type="text" name="loginid" id="loginid"
+            <input class="form-control" type="text" name="loginid" id="loginid" required=""
                         value="<?php if(isset($_GET['editid'])) { echo $rsedit['loginid']; } ?>" />
             <span class="messages"></span>
         </div>
@@ -204,13 +204,13 @@ if(isset($_GET['editid']))
     <div class="form-group row">
         <label class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-4">
-            <input class="form-control" type="password" name="password" id="password"/>
+            <input class="form-control" type="password" name="password" id="password" required=""/>
             <span class="messages"></span>
         </div>
 
         <label class="col-sm-2 col-form-label">Confirm Password</label>
         <div class="col-sm-4">
-            <input class="form-control" type="password" name="cnfirmpassword" id="cnfirmpassword"/>
+            <input class="form-control" type="password" name="cnfirmpassword" id="cnfirmpassword" required=""/>
             <span class="messages" id="confirm-pw" style="color: red;"></span>
         </div>
     </div>
