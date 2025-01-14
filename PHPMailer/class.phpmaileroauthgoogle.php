@@ -59,7 +59,7 @@ class PHPMailerOAuthGoogle
 
     private function getGrant()
     {
-        return new \League\OAuth2\Client\Grant\RefreshToken();
+        return new \League\OAuth2\Client\Token\AccessToken();
     }
 
     private function getToken()

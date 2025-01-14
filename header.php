@@ -69,7 +69,7 @@ while($row=mysqli_fetch_array($query))
 <a href="index.php">
 
   <div class="text-center">
-<image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 50%"></image>
+<image class="profile-img" src="uploadImage/Logo/PKK.png" style="width: 60%"></image>
 </div>
 </a>
 <a class="mobile-options">
