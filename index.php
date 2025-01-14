@@ -108,7 +108,7 @@ $row_manage = mysqli_fetch_array($result_manage);
 <div class="row align-items-end">
 <div class="col-8">
 
-<h4 class="text-white">	&#x20B9;.
+<h4 class="text-white">	RM.
     <?php
           $sql = "SELECT sum(bill_amount) as total  FROM `billing_records` ";
           $qsql = mysqli_query($conn,$sql);
